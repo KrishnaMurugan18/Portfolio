@@ -1,3 +1,5 @@
+'use strict';
+
 document.addEventListener('DOMContentLoaded', function () {
     const navbar = document.querySelector('.navbar');
     const scrollUpBtn = document.querySelector('.scroll-up-btn');
@@ -5,17 +7,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const menu = document.querySelector('.navbar .menu');
 
     window.addEventListener('scroll', function () {
-        if (window.scrollY > 20) {
-            navbar.classList.add('sticky');
-        } else {
-            navbar.classList.remove('sticky');
-        }
-
-        if (window.scrollY > 500) {
-            scrollUpBtn.classList.add('show');
-        } else {
-            scrollUpBtn.classList.remove('show');
-        }
+        navbar.classList.toggle('sticky', window.scrollY > 20);
+        scrollUpBtn.classList.toggle('show', window.scrollY > 500);
     });
 
     // Slide-up script
@@ -27,12 +20,13 @@ document.addEventListener('DOMContentLoaded', function () {
     menuBtn.addEventListener('click', function () {
         menu.classList.toggle('active');
         menuBtn.querySelector('i').classList.toggle('active');
+        menu.style.left = menu.classList.contains('active') ? '0%' : '-100%';
     });
 
     // Typing animation script
-    function initializeTyped() {
-        new Typed('.typing', {
-            strings: ['Frontend Web Developer', 'Freelancer'],
+    function initializeTyped(selector, strings) {
+        return new Typed(selector, {
+            strings: strings,
             typeSpeed: 100,
             backSpeed: 100,
             loop: true,
@@ -40,27 +34,17 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Initial initialization
-    initializeTyped();
+    const typedInstance = initializeTyped('.typing', ['Frontend Web Developer', 'Freelancer']);
 
     // Destroy and reinitialize after each loop
-    let typedInstance = null;
-
-    document.addEventListener('DOMContentLoaded', function () {
-        typedInstance = initializeTyped();
-    });
+    typedInstance;
 
     // Example: Destroy and reinitialize after 5 seconds
     setTimeout(function () {
         typedInstance.destroy();
-        typedInstance = initializeTyped();
+        initializeTyped('.typing', ['Frontend Web Developer', 'Freelancer']);
     }, 5000);
 
-
-
-    new Typed('.typing-2', {
-        strings: ['Frontend Web Developer', 'Freelancer'],
-        typeSpeed: 100,
-        backSpeed: 100,
-        loop: true,
-    });
+    // Additional Typed instance
+    initializeTyped('.typing-2', ['Frontend Web Developer', 'Freelancer']);
 });
