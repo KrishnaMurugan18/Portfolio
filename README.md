@@ -16,7 +16,7 @@ This portfolio is a comprehensive showcase of my work and abilities. Here, you'l
 
 ## About Me
 
-Hi! I'm [Your Name], a passionate developer and digital marketer with expertise in Java, HTML, CSS, JavaScript, React, and SQL. I enjoy creating innovative solutions and designing user-friendly websites. My goal is to combine technology and creativity to deliver the best results for my clients.
+Hi! I'm Krishna Kumar, a passionate developer and digital marketer with expertise in Java, HTML, CSS, JavaScript, React, and SQL. I enjoy creating innovative solutions and designing user-friendly websites. My goal is to combine technology and creativity to deliver the best results for my clients.
 
 ## Services
 
