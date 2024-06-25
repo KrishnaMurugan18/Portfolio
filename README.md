@@ -1,8 +1,8 @@
-PORTFOLIO
+Portfolio
 
 Welcome to my portfolio! This repository showcases my professional skills and services, including Digital Marketing, IoT, Web Design, and my proficiency in various programming languages and technologies.
 
- Table of Contents
+Table of Contents
 
 - [Introduction](#introduction)
 - [About Me](#about-me)
@@ -10,15 +10,15 @@ Welcome to my portfolio! This repository showcases my professional skills and se
 - [Skills](#skills)
 - [Contact Me](#contact-me)
 
- Introduction
+Introduction
 
 This portfolio is a comprehensive showcase of my work and abilities. Here, you'll find information about my background, the services I offer, my technical skills, and how to get in touch with me.
 
- About Me
+About Me
 
 Hi! I'm Krishna Kumar, a passionate developer and digital marketer with expertise in Java, HTML, CSS, JavaScript, React, and SQL. I enjoy creating innovative solutions and designing user-friendly websites. My goal is to combine technology and creativity to deliver the best results for my clients.
 
- Services
+Services
 
 # Digital Marketing
 - **SEO Optimization:** Improve your website's search engine rankings.
