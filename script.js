@@ -42,9 +42,9 @@ document.addEventListener('DOMContentLoaded', function () {
     // Example: Destroy and reinitialize after 5 seconds
     setTimeout(function () {
         typedInstance.destroy();
-        initializeTyped('.typing', ['Frontend Web Developer', 'Freelancer']);
+        initializeTyped('.typing', ['Developer', 'Freelancer']);
     }, 5000);
 
     // Additional Typed instance
-    initializeTyped('.typing-2', ['Frontend Web Developer', 'Freelancer']);
+    initializeTyped('.typing-2', ['Cloud & Devops Engineer', 'Freelancer']);
 });
