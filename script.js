@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Initial initialization
-    const typedInstance = initializeTyped('.typing', ['Frontend Web Developer', 'Freelancer']);
+    const typedInstance = initializeTyped('.typing', ['Developer', 'Freelancer']);
 
     // Destroy and reinitialize after each loop
     typedInstance;
